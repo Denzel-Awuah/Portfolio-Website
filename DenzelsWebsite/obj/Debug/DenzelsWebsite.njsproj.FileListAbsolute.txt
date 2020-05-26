@@ -1,0 +1,3 @@
+C:\Users\pc\OneDrive\Desktop\DenzelsWebsite\DenzelsWebsite\obj\Debug\DenzelsWebsite.njsprojAssemblyReference.cache
+C:\Users\pc\OneDrive\Desktop\DenzelsWebsite\DenzelsWebsite\bin\Microsoft.NodejsTools.WebRole.dll
+C:\Users\pc\OneDrive\Desktop\DenzelsWebsite\DenzelsWebsite\obj\Debug\DenzelsWebsite.njsproj.CoreCompileInputs.cache
