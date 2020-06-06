@@ -1,4 +1,4 @@
-@charset "UTF-8";
+﻿@charset "UTF-8";
 
 /*!
 Animate.css - http://daneden.me/animate
@@ -19,7 +19,7 @@ Copyright (c) 2015 Daniel Eden
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
-.ftco-animated {
+.  -animated {
   -webkit-animation-duration: .5s;
   animation-duration: .5s;
   -webkit-animation-fill-mode: both;
@@ -2802,6 +2802,7 @@ Copyright (c) 2015 Daniel Eden
 .zoomInDown {
   -webkit-animation-name: zoomInDown;
   animation-name: zoomInDown;
+  animation-duration: 2s;
 }
 
 @-webkit-keyframes zoomInLeft {
@@ -2841,8 +2842,10 @@ Copyright (c) 2015 Daniel Eden
 }
 
 .zoomInLeft {
-  -webkit-animation-name: zoomInLeft;
-  animation-name: zoomInLeft;
+    -webkit-animation-name: zoomInLeft;
+    animation-name: zoomInLeft;
+    animation-duration: 1.5s;
+    animation-delay: 1s;
 }
 
 @-webkit-keyframes zoomInRight {
@@ -2884,6 +2887,8 @@ Copyright (c) 2015 Daniel Eden
 .zoomInRight {
   -webkit-animation-name: zoomInRight;
   animation-name: zoomInRight;
+  animation-duration: 1.5s;
+  animation-delay:1s;
 }
 
 @-webkit-keyframes zoomInUp {

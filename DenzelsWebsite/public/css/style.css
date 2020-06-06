@@ -4,6 +4,10 @@
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
+
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -38,7 +42,9 @@
 *::before,
 *::after {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+  
+
+}
 
 html {
   font-family: sans-serif;
@@ -73,7 +79,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.5rem; }
 
 p {
-  margin-top: 0;
+  margin-top: 10px;
   margin-bottom: 1rem; }
 
 abbr[title],
@@ -8837,7 +8843,9 @@ h1, h2, h3, h4, h5,
   position: relative;
   z-index: 0; }
   .project.img-2 {
-    height: 600px; }
+    height: 650px; 
+    
+  }
     @media (max-width: 767.98px) {
       .project.img-2 {
         height: 285px; } }
@@ -9072,7 +9080,7 @@ textarea.form-control {
   font-size: 13px;
   font-weight: 500;
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 20px;
   text-transform: uppercase;
   color: black;
   letter-spacing: 3px; }
@@ -9524,3 +9532,115 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+
+
+
+.shimmer {
+    display: inline-block;
+    color: white;
+    background: #000000 -webkit-gradient(linear, 100% 0, 0 0, from(#acacac), color-stop(1.5, #ffffff), to(#acacac));
+    background-position: -4rem top; /*50px*/
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation-name: shimmer;
+    -webkit-animation-duration: 3.5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-background-size: 4rem 100%; /*50px*/
+}
+
+@-webkit-keyframes shimmer {
+    0% {
+        background-position: -4rem top; /*50px*/
+    }
+
+    70% {
+        background-position: 12.5rem top; /*200px*/
+    }
+
+    100% {
+        background-position: 12.5rem top; /*200px*/
+    }
+}
+
+.text5 {
+    
+    display:block;
+    height: 40px;
+    top: 50%;
+    
+}
+
+
+.tt {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+}
+
+.word {
+    position: absolute;
+    width: 295px;
+    opacity: 0;
+    font-size: 35px;
+}
+
+
+.skillsMove {
+    height: 40px;
+    justify-content:center;
+    align-items:center;
+    margin-left: -170px;
+}
+
+#skillsrow{
+    padding-top:20px;
+
+}
+
+
+.letter {
+  
+  
+    float: left;
+    transform: translateZ(65px);
+    transform-origin: 50% 50% 25px;
+}
+
+    .letter.out {
+        transform: rotateX(90deg);
+        transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+
+    .letter.behind {
+        transform: rotateX(-90deg);
+    }
+
+    .letter.in {
+        transform: rotateX(0deg);
+        transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+.wisteria {
+    color: #8e44ad;
+}
+
+.belize {
+    color: #2980b9;
+}
+
+.pomegranate {
+    color: #c0392b;
+}
+
+.green {
+    color: #16a085;
+}
+
+.midnight {
+    color: #2c3e50;
+}
+
+
+
