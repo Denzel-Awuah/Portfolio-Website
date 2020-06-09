@@ -270,15 +270,18 @@
     <Content Include="views\500.handlebars">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="views\chat.handlebars" />
     <Content Include="views\contact.handlebars">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="views\crm.handlebars" />
     <Content Include="views\home.handlebars">
       <SubType>Code</SubType>
     </Content>
     <Content Include="views\layouts\main.handlebars">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="views\movie.handlebars" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="public\lib\" />

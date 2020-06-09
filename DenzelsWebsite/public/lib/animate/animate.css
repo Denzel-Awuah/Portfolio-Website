@@ -1,4 +1,4 @@
-@charset "UTF-8";
+﻿@charset "UTF-8";
 
 /*!
  * animate.css -http://daneden.me/animate
@@ -2067,6 +2067,7 @@
   backface-visibility: visible !important;
   -webkit-animation-name: flipInX;
   animation-name: flipInX;
+  
 }
 
 @-webkit-keyframes flipInY {
@@ -2941,6 +2942,7 @@
 .zoomIn {
   -webkit-animation-name: zoomIn;
   animation-name: zoomIn;
+
 }
 
 @-webkit-keyframes zoomInDown {

@@ -816,6 +816,7 @@ Copyright (c) 2015 Daniel Eden
 .bounceInLeft {
   -webkit-animation-name: bounceInLeft;
   animation-name: bounceInLeft;
+  animation-duration:2s;
 }
 
 @-webkit-keyframes bounceInRight {
@@ -1946,10 +1947,11 @@ Copyright (c) 2015 Daniel Eden
 }
 
 .flipInX {
-  -webkit-backface-visibility: visible !important;
-  backface-visibility: visible !important;
-  -webkit-animation-name: flipInX;
-  animation-name: flipInX;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    -webkit-animation-name: flipInX;
+    animation-name: flipInX;
+    animation-delay: 2s;
 }
 
 @-webkit-keyframes flipInY {
@@ -2172,6 +2174,7 @@ Copyright (c) 2015 Daniel Eden
   animation-name: lightSpeedIn;
   -webkit-animation-timing-function: ease-out;
   animation-timing-function: ease-out;
+  animation-duration: 2s;
 }
 
 @-webkit-keyframes lightSpeedOut {
@@ -2761,6 +2764,7 @@ Copyright (c) 2015 Daniel Eden
 .zoomIn {
   -webkit-animation-name: zoomIn;
   animation-name: zoomIn;
+  animation-duration: 2s;
 }
 
 @-webkit-keyframes zoomInDown {
@@ -2888,7 +2892,7 @@ Copyright (c) 2015 Daniel Eden
   -webkit-animation-name: zoomInRight;
   animation-name: zoomInRight;
   animation-duration: 1.5s;
-  animation-delay:1s;
+  animation-delay:2s;
 }
 
 @-webkit-keyframes zoomInUp {

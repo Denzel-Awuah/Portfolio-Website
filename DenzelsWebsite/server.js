@@ -8,7 +8,7 @@ var bodyParser = require('body-parser');
 
 var app = express();
 
-//Create handldebars with deafual layout
+//Create handldebars with default layout
 var handlebars = require('express-handlebars')
     .create({ defaultLayout: 'main' });
 
@@ -19,6 +19,13 @@ app.set('port', process.env.PORT || 3000);
 app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.urlencoded({ extended: true }));
 
+
+
+
+
+
+// Rendering Pages 
+
 app.get('/', function (req,res, next) {
     res.render('home', {
         layout: 'main',
@@ -27,6 +34,29 @@ app.get('/', function (req,res, next) {
     });
 });
 
+app.get('/crm', function (req, res, next) {
+    res.render('crm', {
+        layout: 'main',
+        
+    });
+});
+
+app.get('/movie', function (req, res, next) {
+    res.render('movie', {
+        layout: 'main',
+        
+    });
+});
+
+app.get('/chat', function (req, res, next) {
+    res.render('chat', {
+        layout: 'main',
+        
+    });
+});
+
+
+
 app.post('/contact', function (req, res, next) {
     console.log(req.body); // print all request body to console log( you can save to da)
     res.render('contact');
@@ -34,9 +64,11 @@ app.post('/contact', function (req, res, next) {
 
 
 
+
+
 //Need to declare all errors http
 
-//404 nor found
+//404 not found
 app.use(function (req, res) {
     res.status(404);
     res.render('404');
@@ -53,4 +85,4 @@ app.use(function (err, req, res, next) {
 
 app.listen(app.get('port'), function () {
     console.log('Express started on http://localhost:' + app.get('port'));
-})
+});
