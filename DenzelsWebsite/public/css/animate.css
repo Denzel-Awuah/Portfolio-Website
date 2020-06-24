@@ -106,7 +106,8 @@ Copyright (c) 2015 Daniel Eden
 
 .bounce {
   -webkit-animation-name: bounce;
-  animation-name: bounce;
+  animation: bounce 3.4s infinite;
+  
   -webkit-transform-origin: center bottom;
   transform-origin: center bottom;
 }
@@ -145,8 +146,8 @@ Copyright (c) 2015 Daniel Eden
   }
 
   50% {
-    -webkit-transform: scale3d(1.05, 1.05, 1.05);
-    transform: scale3d(1.05, 1.05, 1.05);
+    -webkit-transform: scale3d(2, 2, 2);
+    transform: scale3d(2, 2, 2);
   }
 
   to {
@@ -174,7 +175,7 @@ Copyright (c) 2015 Daniel Eden
 
 .pulse {
   -webkit-animation-name: pulse;
-  animation-name: pulse;
+  animation: pulse 5s infinite;
 }
 
 @-webkit-keyframes rubberBand {
@@ -253,7 +254,7 @@ Copyright (c) 2015 Daniel Eden
 
 .rubberBand {
   -webkit-animation-name: rubberBand;
-  animation-name: rubberBand;
+  animation: rubberBand 4s infinite;
 }
 
 @-webkit-keyframes shake {
@@ -293,6 +294,7 @@ Copyright (c) 2015 Daniel Eden
 .shake {
   -webkit-animation-name: shake;
   animation-name: shake;
+  
 }
 
 @-webkit-keyframes swing {
@@ -353,7 +355,8 @@ Copyright (c) 2015 Daniel Eden
   -webkit-transform-origin: top center;
   transform-origin: top center;
   -webkit-animation-name: swing;
-  animation-name: swing;
+  animation:swing 3s infinite;
+  
 }
 
 @-webkit-keyframes tada {
@@ -412,7 +415,7 @@ Copyright (c) 2015 Daniel Eden
 
 .tada {
   -webkit-animation-name: tada;
-  animation-name: tada;
+  animation: tada 3.5s infinite;
 }
 
 /* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
@@ -493,7 +496,7 @@ Copyright (c) 2015 Daniel Eden
 
 .wobble {
   -webkit-animation-name: wobble;
-  animation-name: wobble;
+  animation: wobble 3s infinite;
 }
 
 @-webkit-keyframes jello {
@@ -582,7 +585,13 @@ Copyright (c) 2015 Daniel Eden
 
 .jello {
   -webkit-animation-name: jello;
-  animation-name: jello;
+  animation: jello 7s infinite;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+}
+.jello1 {
+  -webkit-animation-name: jello;
+  animation: jello 6s infinite;
   -webkit-transform-origin: center;
   transform-origin: center;
 }
@@ -2891,8 +2900,8 @@ Copyright (c) 2015 Daniel Eden
 .zoomInRight {
   -webkit-animation-name: zoomInRight;
   animation-name: zoomInRight;
-  animation-duration: 1.5s;
-  animation-delay:2s;
+  animation-duration: 2s;
+  animation-delay:2.2s;
 }
 
 @-webkit-keyframes zoomInUp {
