@@ -11,9 +11,7 @@
                         <div class="overlay"></div>
                     </div>
                     <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-                        <a href="https://www.youtube.com/watch?v=b0r28IQDLCY" class="icon-video popup-vimeo d-flex justify-content-center align-items-center">
-                            <span class="ion-ios-play play"></span>
-                        </a>
+                       
                         <div class="text">
                             <span class="subheading">Hello</span>
                             <h1 class="mb-4 mt-3">I'm <span>{{developerName}}</span></h1>
@@ -34,9 +32,7 @@
                         <div class="overlay"></div>
                     </div>
                     <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-                        <a href="https://www.youtube.com/watch?v=b0r28IQDLCY" class="icon-video popup-vimeo d-flex justify-content-center align-items-center">
-                            <span class="ion-ios-play play"></span>
-                        </a>
+                        
                         <div class="text">
                             <h1 class="mb-4 mt-3">I'm a <span>web designer</span> from {{countryName}}</h1>
                             <p><a href="#projects-section" class="btn-custom">Check out my work!</a></p>
@@ -56,9 +52,7 @@
                         <div class="overlay"></div>
                     </div>
                     <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-                        <a href="https://www.youtube.com/watch?v=b0r28IQDLCY" class="icon-video popup-vimeo d-flex justify-content-center align-items-center">
-                            <span class="ion-ios-play play"></span>
-                        </a>
+                       
                         <div class="text">
                             <h1 class="mb-4 mt-3">Need a developer? <span><br />Call me!</span></h1>
                             <p><a href="#contact-section" class="btn-custom">Send me a Message!</a></p>
@@ -100,7 +94,10 @@
                             <div class="icon"><span class="flaticon-web-design"></span></div>
                             <div class="media-body">
                                 <h3 class="heading mb-3">Web Design</h3>
-                                <p>I've been designing web apps for over 3 years now.</p>
+                                <p>
+                                    I've been designing web apps for over 3 years now. This web application was made using Node js,
+                                    Express and express-handlebars.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -110,8 +107,9 @@
                             <div class="media-body">
                                 <h3 class="heading mb-3">Web Application</h3>
                                 <p id="handlebars">
-                                    I created this web application usiing handlebars.js, which is a templating engine used to develop and compile
-                                    templates into javascript functions. This allows for much faster execution of the templates being used for a web applicaition.
+                                    Handlebars.js is a templating engine used to develop and compile
+                                    templates into javascript functions. This allows for much faster execution of the templates being used for a web
+                                    applicaition.
                                 </p>
                             </div>
                         </div>
@@ -120,7 +118,7 @@
                 <div class="counter-wrap ftco-animate d-flex mt-md-3">
                     <div class="text p-4 pr-5 bg-primary">
                         <p class="mb-0">
-                            <span class="number" data-number="17">0</span>
+                            <span id="plussign">+ <span class="number" data-number="17">0</span></span>
                             <span>Finished Projects</span>
                         </p>
                     </div>
@@ -133,7 +131,7 @@
 
 
 <!-- Skills Section-->
-<section class="ftco-section bg-light" id="skills-section">
+<section class="ftco-section bg-light " id="skills-section">
     <div class="container">
         <div class="row justify-content-center pb-5">
             <div class="col-md-12 heading-section text-center ftco-animate">
@@ -269,68 +267,87 @@
 
 
 
+<!-- Hire me Section-->
+<section class="ftco-section ftco-hireme">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7 col-lg-9 d-flex align-items-center ftco-animate">
+                <h2>I'm <span>Available</span> for Work<br /> As soon as possible</h2>
+            </div>
+            <div class="col-md-5 col-lg-3 d-flex align-items-center ftco-animate">
+                <p class="mb-0"><a href="#contact-section" class="btn btn-white py-4 px-5" id="hiremebtn">Hire me</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
 <!-- Projects Section-->
 <section class="ftco-section ftco-project" id="projects-section">
-    <div class="container" >
+    <div class="container">
         <div class="row justify-content-center pb-5">
             <div class="col-md-12 heading-section text-center ftco-animate">
-                <span class="subheading">Accomplishments</span>
+                
                 <h2 class="mb-4">My Projects</h2>
                 <p>Take a look at the different software projects that I have worked on!</p>
             </div>
         </div>
         <div class="row">
+            <!-- CRM Website -->
             <div class="col-md-12">
-                <div class="project img ftco-animate img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/crm2.png);  ">
+                <div class="project img ftco-animate img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/crmm.jpg);  ">
                     <div class="overlay"></div>
                     <div class="text text-center p-4">
                         <h3><a href="crm">CRM Website for Trent Community Research Center</a></h3>
                         <span>Full Stack Development</span>
-                        <a class="button"  href="crm">Details</a>
-                      
-
-
+                        <a class="button" href="crm">Details</a>
 
                     </div>
                 </div>
             </div>
+            <!-- Movie Gallery Website -->
             <div class="col-md-6">
-                <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-2.jpg);">
+                <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/moviepic.jpg);">
                     <div class="overlay"></div>
                     <div class="text text-center p-4">
                         <h3><a href="movie">Movie Gallery Website</a></h3>
                         <span>Full Stack Development</span>
-                        <a class="button" href="movie">Details</a>                     
+                        <a class="button" href="movie">Details</a>
                     </div>
                 </div>
             </div>
+            <!-- Chatting Program -->
             <div class="col-md-6">
-                <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-3.jpg);">
+                <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/chat.png);">
                     <div class="overlay"></div>
                     <div class="text text-center p-4">
                         <h3><a href="chat">Chatting Program</a></h3>
                         <span>Object Oriented Programming</span>
-                        <a class="button"  href="chat">Details</a>
-                     
-
+                        <a class="button" href="chat">Details</a>
                     </div>
                 </div>
             </div>
+            <!-- C# Projects-->
             <div class="col-md-4">
                 <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-4.jpg);">
                     <div class="overlay"></div>
                     <div class="text text-center p-4">
-                        <h3><a href="#">Branding &amp; Illustration Design</a></h3>
-                        <span>Web Design</span>
+                        <h3><a href="#">C# Projects</a></h3>
+                        <span>Object Oriented Programming</span>
+                        <a class="button" href="csharp">Details</a>
                     </div>
                 </div>
             </div>
+            <!-- Client Server Processing Program -->
             <div class="col-md-8">
-                <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-5.jpg);">
+                <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/database.jpg);">
                     <div class="overlay"></div>
                     <div class="text text-center p-4">
-                        <h3><a href="#">Branding &amp; Illustration Design</a></h3>
-                        <span>Web Design</span>
+                        <h3><a href="clientserver">Client-Server Transfer program </a></h3>
+                        <span>Procedural/Structured Programing</span>
+                        <a class="button" href="clientserver">Details</a>
                     </div>
                 </div>
             </div>
@@ -341,20 +358,20 @@
 
 
 
-<!-- Blog Section-->
+<!-- Work Experience (blog) Section-->
 <section class="ftco-section bg-light" id="blog-section">
     <div class="container">
         <div class="row justify-content-center mb-5 pb-5">
             <div class="col-md-7 heading-section text-center ftco-animate">
                 <!-- <span class="subheading">Experience</span> -->
                 <h2 class="mb-4">Work Experience</h2>
-                <p>View my work experience within technology/computer science environments.</p>
+                <p>View my work experience in Computer Science/Technology environments.</p>
             </div>
         </div>
         <div class="row d-flex">
             <div class="col-md-4 d-flex ftco-animate">
                 <div class="blog-entry justify-content-end">
-                    <a href="single.html" class="block-20" style="background-image: url('images/trent.png');">
+                    <a  class="block-20" style="background-image: url('images/trent.png');">
                     </a>
                     <div class="text mt-3 float-right d-block">
                         <div class="d-flex align-items-center mb-3 meta">
@@ -368,13 +385,13 @@
                                 <span class="mr-2">Peterborough, Ontario, Canada</span>
                             </p>
                         </div>
-                        <h3 class="heading"><a href="single.html">Software Engineering Project</a></h3>
+                        <h3 class="heading"><a>Software Engineering Project</a></h3>
                         <ul>
                             <li>Capstone Course at Trent University</li>
-                            <li>Working with a team to redesign Trent Community Research Center’s databaseUI</li>
+                            <li>Working with a team to redesign Trent Community Research Center’s database UI</li>
                             <li>Developed CRM Website for management of Client’s database</li>
-                            <li>Addednotification and chatting features</li>
-                            <li>Using Agile Development Methodologywith client</li>
+                            <li>Added notification and chatting features</li>
+                            <li>Using Agile Development Methodology with client</li>
                             <li>Use of MVC design architecture</li>
                         </ul>
                     </div>
@@ -382,12 +399,12 @@
             </div>
             <div class="col-md-4 d-flex ftco-animate">
                 <div class="blog-entry justify-content-end">
-                    <a href="single.html" class="block-20" style="background-image: url('images/hack5.png'); ">
+                    <a  class="block-20" style="background-image: url('images/hack5.png'); ">
                     </a>
                     <div class="text mt-3 float-right d-block">
                         <div class="d-flex align-items-center mb-3 meta">
                             <p class="mb-0">
-                                <span class="mr-2">Trent University Electric City Hackathon</span>
+                                <span class="mr-2">Trent University <br />Electric City Hackathon</span>
                             </p>
                         </div>
                         <div class="d-flex align-items-center mb-3 meta">
@@ -395,10 +412,10 @@
                                 <span class="mr-2">Peterborough, Ontario, Canada</span>
                             </p>
                         </div>
-                        <h3 class="heading"><a href="single.html">Hackathon Organizer</a></h3>
+                        <h3 class="heading"><a>Hackathon Organizer</a></h3>
                         <ul>
-                            <li>Worked with Marketing team topromote event</li>
-                            <li>Managed EC Hackathon social media accounts for marketing purposes</li>
+                            <li>Worked with Marketing team to promote event</li>
+                            <li>Managed Electric City Hackathon social media accounts for marketing purposes</li>
                             <li>Created social media posts on Instagram, Twitter and Facebook for EC Hackathon</li>
                             <li>Assist in answering coding-based questions from Hackathon programmers during the event</li>
                             <li>Managing and scheduling of Sponsors workshop times during the event</li>
@@ -408,7 +425,7 @@
             </div>
             <div class="col-md-4 d-flex ftco-animate">
                 <div class="blog-entry justify-content-end">
-                    <a href="single.html" class="block-20" style="background-image: url('images/ebgames.png');">
+                    <a  class="block-20" style="background-image: url('images/ebgames.png');">
                     </a>
                     <div class="text mt-3 float-right d-block">
                         <div class="d-flex align-items-center mb-3 meta">
@@ -422,7 +439,7 @@
                                 <span class="mr-2">Brampton, Ontario, Canada</span>
                             </p>
                         </div>
-                        <h3 class="heading"><a href="single.html">Product Distribution Management</a></h3>
+                        <h3 class="heading"><a >Product Distribution Management</a></h3>
                         <ul>
                             <li>Using a rf scanner to shelve video games</li>
                             <li>Order picking of gaming products</li>
@@ -455,16 +472,16 @@
             <div class="col-md-6 order-md-last d-flex">
                 <form action="/contact" method="POST" class="bg-light p-4 p-md-5 contact-form">
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Your Name" name="name">
+                        <input type="text" class="form-control" placeholder="Your Name" name="name" required>
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Your Email" name="email">
+                        <input type="text" class="form-control" placeholder="Your Email" name="email" required>
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Subject" name="subject">
+                        <input type="text" class="form-control" placeholder="Subject" name="subject" required>
                     </div>
                     <div class="form-group">
-                        <textarea name="message" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+                        <textarea name="message" id="" cols="30" rows="7" class="form-control" placeholder="Message" required></textarea>
                     </div>
                     <div class="form-group">
                         <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
@@ -479,6 +496,8 @@
         </div>
     </div>
 </section>
+
+
 
 
 <!-- Disabling and Enabling scroll on popup -->
