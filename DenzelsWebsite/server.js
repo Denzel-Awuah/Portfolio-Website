@@ -46,7 +46,7 @@ var handlebars = require('express-handlebars')
     .create({ defaultLayout: 'main' });
 
 app.engine('handlebars', handlebars.engine);
-app.set('view engine', 'handlebars'); 
+app.set('view engine', 'handlebars');
 
 
 app.set('port', process.env.PORT || 80);
@@ -91,7 +91,7 @@ app.get('/crm', function (req, res, next) {
 app.get('/movie', function (req, res, next) {
     res.render('movie', {
         layout: 'main',
-        
+
     });
 });
 
@@ -100,7 +100,7 @@ app.get('/movie', function (req, res, next) {
 app.get('/chat', function (req, res, next) {
     res.render('chat', {
         layout: 'main',
-        
+
     });
 });
 
@@ -111,7 +111,7 @@ app.get('/chat', function (req, res, next) {
 app.get('/clientserver', function (req, res, next) {
     res.render('clientserver', {
         layout: 'main',
-        
+
     });
 });
 
@@ -121,7 +121,7 @@ app.get('/clientserver', function (req, res, next) {
 app.get('/csharp', function (req, res, next) {
     res.render('csharp', {
         layout: 'main',
-        
+
     });
 });
 
@@ -155,7 +155,7 @@ app.post('/contact', function (req, res, next) {
         else { //if query is successful
             res.render('contact');
             console.log('Connected\n');
-            
+
         }
 
     });
