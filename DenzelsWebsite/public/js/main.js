@@ -11,7 +11,7 @@
     responsive: true,
     parallaxBackgrounds: true,
     parallaxElements: true,
-    horizontalScrolling: false,
+    horizontalScrolling: true,
     hideDistantElements: false,
     scrollProperty: 'scroll'
   });
@@ -29,7 +29,7 @@
 
 	// loader
 	var loader = function() {
-		setTimeout(function() { 
+		setTimeout(function() {
 			if($('#ftco-loader').length > 0) {
 				$('#ftco-loader').removeClass('show');
 			}
@@ -52,11 +52,11 @@
 			if ( $('#ftco-nav').is(':visible') ) {
 				$(this).removeClass('active');
 			} else {
-				$(this).addClass('active');	
+				$(this).addClass('active');
 			}
 
-			
-			
+
+
 		});
 
 	};
@@ -81,7 +81,7 @@
 	};
 
 	onePageClick();
-	
+
 
 	var carousel = function() {
 		$('.home-slider').owlCarousel({
@@ -143,19 +143,19 @@
 
 			if (st > 150) {
 				if ( !navbar.hasClass('scrolled') ) {
-					navbar.addClass('scrolled');	
+					navbar.addClass('scrolled');
 				}
-			} 
+			}
 			if (st < 150) {
 				if ( navbar.hasClass('scrolled') ) {
 					navbar.removeClass('scrolled sleep');
 				}
-			} 
+			}
 			if ( st > 350 ) {
 				if ( !navbar.hasClass('awake') ) {
-					navbar.addClass('awake');	
+					navbar.addClass('awake');
 				}
-				
+
 				if(sd.length > 0) {
 					sd.addClass('sleep');
 				}
@@ -173,10 +173,10 @@
 	};
 	scrollWindow();
 
-	
+
 
 	var counter = function() {
-		
+
 		$('#section-counter, .hero-wrap, .ftco-counter').waypoint( function( direction ) {
 
 			if( direction === 'down' && !$(this.element).hasClass('ftco-animated') ) {
@@ -193,7 +193,7 @@
 					  }, 7000
 					);
 				});
-				
+
 			}
 
 		} , { offset: '95%' } );
@@ -207,7 +207,7 @@
 		$('.ftco-animate').waypoint( function( direction ) {
 
 			if( direction === 'down' && !$(this.element).hasClass('ftco-animated') ) {
-				
+
 				i++;
 
 				$(this.element).addClass('item-animate');
@@ -229,9 +229,9 @@
 							el.removeClass('item-animate');
 						},  k * 50, 'easeInOutExpo' );
 					});
-					
+
 				}, 100);
-				
+
 			}
 
 		} , { offset: '95%' } );
@@ -271,7 +271,7 @@
 
 
 
-	//What I Do section 
+	//What I Do section
 //----------------------------------------------------------------------------------------------------------\
 
 var words = document.getElementsByClassName('word');
@@ -289,13 +289,13 @@ function changeWord() {
   for (var i = 0; i < cw.length; i++) {
     animateLetterOut(cw, i);
   }
-  
+
   for (var i = 0; i < nw.length; i++) {
     nw[i].className = 'letter behind';
     nw[0].parentElement.style.opacity = 1;
     animateLetterIn(nw, i);
   }
-  
+
   currentWord = (currentWord == wordArray.length-1) ? 0 : currentWord+1;
 }
 
@@ -322,7 +322,7 @@ function splitLetters(word) {
     word.appendChild(letter);
     letters.push(letter);
   }
-  
+
   wordArray.push(letters);
 }
 
@@ -338,4 +338,3 @@ setInterval(changeWord, 2700);
 
 
 })(jQuery);
-
