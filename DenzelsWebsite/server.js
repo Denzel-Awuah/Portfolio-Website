@@ -1,4 +1,5 @@
-'use strict';
+#!/usr/bin/env nodejs
+
 
 //------Dependencies------\\
 var express = require('express');
@@ -49,9 +50,9 @@ app.engine('handlebars', handlebars.engine);
 app.set('view engine', 'handlebars');
 
 
-app.set('port', process.env.PORT || 80);
+app.set('port', 5000 || 80);
 
-//app.set('port', 80 || 3000);
+
 
 app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -133,32 +134,18 @@ app.get('/csharp', function (req, res, next) {
 
 //------Contact (When user submits a message)------\\
 app.post('/contact', function (req, res, next) {
+  res.render('contact', {
+      layout: 'main',
 
-    //Field variables
-    var name = req.body.name;
-    var email = req.body.email;
-    var subject = req.body.subject;
-    var message = req.body.message;
-    //sql query
-    var sql = "INSERT INTO contactusers(Name, Subject, Email, Message) VALUES ?";
-    //binding values for insertion
-    var values = [[req.body.name, req.body.subject, req.body.email, req.body.message]];
+  });
 
-    //Performing Query
-    connection.query(sql, [values], function (error, rows, fields) {
 
-        //if query fails
-        if (!!error) {
-            console.log('error in the query');
-            res.render('500');
-        }
-        else { //if query is successful
-            res.render('contact');
-            console.log('Connected\n');
 
-        }
-
-    });
+    console.log("NEW MESSAGE");
+    console.log("Name: "+req.body.name);
+    console.log("Email:"+req.body.email);
+    console.log("Subject:" + req.body.subject);
+    console.log("Message: "+ req.body.message);
 
     connection.end();
 });
