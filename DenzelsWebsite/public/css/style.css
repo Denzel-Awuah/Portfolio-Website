@@ -3732,7 +3732,7 @@ input[type="button"].btn-block {
 .navbar-light .navbar-nav .nav-link {
   color: rgba(0, 0, 0, 0.5); }
   .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
-    color: rgba(0, 0, 0, 0.7); }
+    color: #0075f6; }
   .navbar-light .navbar-nav .nav-link.disabled {
     color: rgba(0, 0, 0, 0.3); }
 
@@ -8336,7 +8336,7 @@ h1, h2, h3, h4, h5,
           .owl-carousel.home-slider .slider-item .slider-text {
             text-align: center; } }
         .owl-carousel.home-slider .slider-item .slider-text .one-third {
-          width: 60%;
+          width: 56.5%;
           position: relative;
           height: 100%;
           display: block;
@@ -9589,9 +9589,10 @@ textarea.form-control {
 
 .word {
     position: absolute;
-    width: 295px;
+    width: 395px;
     opacity: 0;
-    font-size: 35px;
+    font-size: 38px;
+    margin-right: -2000px;
 }
 
 
@@ -9630,34 +9631,81 @@ textarea.form-control {
         transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     }
 
+/*Desktop */
+@media (min-width: 700px) {
 .frontend {
     color: #F82A2A;
 }
-
 .backend {
     color: #2980b9;
 }
-
 .apis {
     color: #0230DA;
     text-align: center;
     justify-content: center;
-    margin-left: 45px;
+    margin-left: 41px;
 }
-
 .oop {
     color: #031933;
     text-align: center;
     justify-content: center;
-    margin-left: 46px;
+    margin-left: 41px;
 }
+.frameworks{
+    color: orange;
+    
+}
+.testing{
+    color: green;
 
+}
 .agile {
-    color: #2c3e50;
+    color: #ef34ad;
     text-align: center;
     justify-content: center;
     margin-left: 41px;
 }
+
+} /*End Desktop*/
+
+
+/*Mobile */
+@media (max-width: 400px) {
+.frontend {
+    color: #F82A2A;
+}
+.backend {
+    color: #2980b9;
+}
+.apis {
+    color: #0230DA;
+    text-align: center;
+    justify-content: center;
+    left:140px;
+}
+.oop {
+    color: #031933;
+    text-align: center;
+    justify-content: center;
+    left:140px;
+}
+.frameworks{
+    color: orange;
+
+}
+.testing{
+    color: green;
+
+}
+.agile {
+    color: #ef34ad;
+    text-align: center;
+    justify-content: center;
+    left:138px;
+}
+
+} /*End Mobile*/
+
 
 #handlebars{
     width: 300px;
@@ -9846,4 +9894,24 @@ textarea.form-control {
 #hiremebtn:hover{
     opacity:1;
     font-size: 19px;
+}
+
+
+
+#button1 {
+  padding-top: 20px;
+  background-color: #0075f6;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  width: 100%;
+  display: block;
+  font-size: 16px;
+  margin: auto;
+  cursor: pointer;
+}
+
+#button1:hover{
+  color:white;
+  border: 2px solid black;
 }

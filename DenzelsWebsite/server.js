@@ -5,8 +5,11 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var mysql = require('mysql');
+var http = require('http');
+var mongo = require('mongodb').MongoClient;
+var assert = require('assert');
 
-
+var url = 'mongodb://localhost:27017/contact';
 
 //------Connect Database------\\
 var connection = mysql.createConnection({
@@ -18,13 +21,13 @@ var connection = mysql.createConnection({
     database: 'userinfo'
 });
 
-connection.connect(function (error) {
-    if (!!error) {
-        console.log('Error, did not connect');
-    } else {
-        console.log('Connected');
-    }
-});
+// connection.connect(function (error) {
+//     if (!!error) {
+//         console.log('Error, did not connect');
+//     } else {
+//         console.log('Connected');
+//     }
+// });
 
 
 
@@ -118,9 +121,9 @@ app.get('/clientserver', function (req, res, next) {
 
 
 
-//C Sharp
-app.get('/csharp', function (req, res, next) {
-    res.render('csharp', {
+//React Word Processor App
+app.get('/reactapp', function (req, res, next) {
+    res.render('reactapp', {
         layout: 'main',
 
     });
@@ -139,15 +142,39 @@ app.post('/contact', function (req, res, next) {
 
   });
 
+//Mongo db connection
+var item = {
+  name: req.body.name,
+  email: req.body.email,
+  subject: req.body.subject,
+  message: req.body.message
+};
+
+mongo.connect(url, function(err, db){
+  //assert.equal(null, err);
+  var dbo = db.db("contact");
+if (err) {
+  console.log("Error in connecting to Mongodb");
+}else{
+  console.log("MongoDB connection successfull !");
+}
 
 
-    console.log("NEW MESSAGE");
-    console.log("Name: "+req.body.name);
-    console.log("Email:"+req.body.email);
-    console.log("Subject:" + req.body.subject);
-    console.log("Message: "+ req.body.message);
+  dbo.collection("contactsubmit").insertOne(item, function(error, result) {
+    //assert.equal(null, err);
+    if (error) {
+      console.log("Error while trying to insert item");
+    }else{
+    console.log("Item inserted into mongoDB");
+     }
 
-    connection.end();
+    db.close();
+  });
+});
+
+    //console.log("\nNEW MESSAGE:"+ "\nName: "+req.body.name+"\nEmail: "+req.body.email+ "\nSubject: " + req.body.subject+ "\nMessage: "+ req.body.message+"\n");
+
+    //connection.end();
 });
 
 
