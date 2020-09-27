@@ -129,6 +129,15 @@ app.get('/reactapp', function (req, res, next) {
     });
 });
 
+//Angular Soccer App
+app.get('/angularsite', function (req, res, next) {
+    res.render('angularsite', {
+        layout: 'main',
+
+    });
+});
+
+
 
 
 
