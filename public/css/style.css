@@ -6506,7 +6506,7 @@ button.bg-dark:focus {
 
 .mb-4,
 .my-4 {
-  margin-bottom: 1.5rem !important; }
+  margin-bottom: 1.5rem; }
 
 .ml-4,
 .mx-4 {
@@ -9906,6 +9906,9 @@ textarea.form-control {
     color:#ef34ad;
   }
 
+  .owlsub{
+    margin-top: 325px;
+  } 
 }
 
 
