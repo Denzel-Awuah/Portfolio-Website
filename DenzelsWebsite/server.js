@@ -1,11 +1,15 @@
-'use strict';
+#!/usr/bin/env nodejs
+
 
 //------Dependencies------\\
 var express = require('express');
 var bodyParser = require('body-parser');
 var mysql = require('mysql');
+var http = require('http');
+//var mongo = require('mongodb').MongoClient;
+var assert = require('assert');
 
-
+var url = 'mongodb://localhost:27017/contact';
 
 //------Connect Database------\\
 var connection = mysql.createConnection({
@@ -17,13 +21,13 @@ var connection = mysql.createConnection({
     database: 'userinfo'
 });
 
-connection.connect(function (error) {
-    if (!!error) {
-        console.log('Error, did not connect');
-    } else {
-        console.log('Connected');
-    }
-});
+// connection.connect(function (error) {
+//     if (!!error) {
+//         console.log('Error, did not connect');
+//     } else {
+//         console.log('Connected');
+//     }
+// });
 
 
 
@@ -49,9 +53,9 @@ app.engine('handlebars', handlebars.engine);
 app.set('view engine', 'handlebars');
 
 
-app.set('port', process.env.PORT || 80);
+app.set('port', 5000 || 80);
 
-//app.set('port', 80 || 3000);
+
 
 app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -117,9 +121,17 @@ app.get('/clientserver', function (req, res, next) {
 
 
 
-//C Sharp
-app.get('/csharp', function (req, res, next) {
-    res.render('csharp', {
+//React Word Processor App
+app.get('/reactapp', function (req, res, next) {
+    res.render('reactapp', {
+        layout: 'main',
+
+    });
+});
+
+//Angular Soccer App
+app.get('/angularsite', function (req, res, next) {
+    res.render('angularsite', {
         layout: 'main',
 
     });
@@ -131,36 +143,47 @@ app.get('/csharp', function (req, res, next) {
 
 
 
+
 //------Contact (When user submits a message)------\\
 app.post('/contact', function (req, res, next) {
+  res.render('contact', {
+      layout: 'main',
 
-    //Field variables
-    var name = req.body.name;
-    var email = req.body.email;
-    var subject = req.body.subject;
-    var message = req.body.message;
-    //sql query
-    var sql = "INSERT INTO contactusers(Name, Subject, Email, Message) VALUES ?";
-    //binding values for insertion
-    var values = [[req.body.name, req.body.subject, req.body.email, req.body.message]];
+  });
 
-    //Performing Query
-    connection.query(sql, [values], function (error, rows, fields) {
+//Mongo db connection
+var item = {
+  name: req.body.name,
+  email: req.body.email,
+  subject: req.body.subject,
+  message: req.body.message
+};
 
-        //if query fails
-        if (!!error) {
-            console.log('error in the query');
-            res.render('500');
-        }
-        else { //if query is successful
-            res.render('contact');
-            console.log('Connected\n');
+mongo.connect(url, function(err, db){
+  //assert.equal(null, err);
+  var dbo = db.db("contact");
+if (err) {
+  console.log("Error in connecting to Mongodb");
+}else{
+  console.log("MongoDB connection successfull !");
+}
 
-        }
 
-    });
+  dbo.collection("contactsubmit").insertOne(item, function(error, result) {
+    //assert.equal(null, err);
+    if (error) {
+      console.log("Error while trying to insert item");
+    }else{
+    console.log("Item inserted into mongoDB");
+     }
 
-    connection.end();
+    db.close();
+  });
+});
+
+    //console.log("\nNEW MESSAGE:"+ "\nName: "+req.body.name+"\nEmail: "+req.body.email+ "\nSubject: " + req.body.subject+ "\nMessage: "+ req.body.message+"\n");
+
+    //connection.end();
 });
 
 

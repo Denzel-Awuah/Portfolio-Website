@@ -3732,7 +3732,7 @@ input[type="button"].btn-block {
 .navbar-light .navbar-nav .nav-link {
   color: rgba(0, 0, 0, 0.5); }
   .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
-    color: rgba(0, 0, 0, 0.7); }
+    color: #0075f6; }
   .navbar-light .navbar-nav .nav-link.disabled {
     color: rgba(0, 0, 0, 0.3); }
 
@@ -8011,7 +8011,8 @@ body {
     color: #6c757d;
 }
   body.menu-show {
-    overflow: hidden;
+    /* overflow: hidden; */
+    overflow-x: hidden;
     position: fixed;
     height: 100%;
     width: 100%; }
@@ -8336,12 +8337,13 @@ h1, h2, h3, h4, h5,
           .owl-carousel.home-slider .slider-item .slider-text {
             text-align: center; } }
         .owl-carousel.home-slider .slider-item .slider-text .one-third {
-          width: 50%;
+          width: 65.5%;
           position: relative;
-          height: 650px;
+          height: 90%;
           display: block;
           margin-left: auto;
-          margin-right: auto;
+         /* margin-right: auto; */
+         border-radius: 25px;;
           z-index: -1;
 
           -webkit-box-shadow: 20px -20px 69px -27px rgba(0, 0, 0, 0.16);
@@ -8391,7 +8393,7 @@ h1, h2, h3, h4, h5,
             @media (min-width: 992px) {
               .owl-carousel.home-slider .slider-item .slider-text .one-forth .text {
                 position: absolute;
-                top: 50%;
+                top: 33%;
                 left: 0;
                 -webkit-transform: translateY(-50%);
                 -ms-transform: translateY(-50%);
@@ -8439,7 +8441,8 @@ h1, h2, h3, h4, h5,
               font-size: 50px; } }
           @media (max-width: 767.98px) {
             .owl-carousel.home-slider .slider-item .slider-text h1 {
-              font-size: 40px; } }
+              font-size: 40px;
+             } }
         .owl-carousel.home-slider .slider-item .slider-text h2 {
           font-size: 30px;
           font-weight: 400; }
@@ -8714,14 +8717,14 @@ h1, h2, h3, h4, h5,
       font-size: 60px;
       color: #0075f6;
       background: #9ff669;
-      background: -moz-linear-gradient(-45deg, #9ff669 0%, #31de79 100%);
+      background: -moz-linear-gradient(-45deg, #2251b2 0%, #31de79 100%);
       background: -webkit-gradient(left top, right bottom, color-stop(0%, #9ff669), color-stop(100%, #31de79));
-      background: -webkit-linear-gradient(-45deg, #9ff669 0%, #31de79 100%);
-      background: -o-linear-gradient(-45deg, #9ff669 0%, #31de79 100%);
-      background: -ms-linear-gradient(-45deg, #9ff669 0%, #31de79 100%);
-      background: -webkit-linear-gradient(315deg, #9ff669 0%, #31de79 100%);
-      background: -o-linear-gradient(315deg, #9ff669 0%, #31de79 100%);
-      background: linear-gradient(135deg, #9ff669 0%, #31de79 100%);
+      background: -webkit-linear-gradient(-45deg, #2251b2 0%, #31de79 100%);
+      background: -o-linear-gradient(-45deg, #2251b2 0%, #31de79 100%);
+      background: -ms-linear-gradient(-45deg, #2251b2 0%, #31de79 100%);
+      background: -webkit-linear-gradient(315deg, #2251b2 0%, #31de79 100%);
+      background: -o-linear-gradient(315deg, #2251b2 0%, #31de79 100%);
+      background: linear-gradient(135deg, #2251b2 0%, #31de79 100%);
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9ff669', endColorstr='#31de79', GradientType=1 );
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
@@ -8745,14 +8748,14 @@ h1, h2, h3, h4, h5,
       line-height: 1.0;
       color: #000000;
       background: #9ff669;
-      background: -moz-linear-gradient(-45deg, #9ff669 0%, #31de79 100%);
+      background: -moz-linear-gradient(-45deg, #2251b2 0%, #31de79 100%);
       background: -webkit-gradient(left top, right bottom, color-stop(0%, #9ff669), color-stop(100%, #31de79));
-      background: -webkit-linear-gradient(-45deg, #9ff669 0%, #31de79 100%);
-      background: -o-linear-gradient(-45deg, #9ff669 0%, #31de79 100%);
-      background: -ms-linear-gradient(-45deg, #9ff669 0%, #31de79 100%);
-      background: -webkit-linear-gradient(315deg, #9ff669 0%, #31de79 100%);
-      background: -o-linear-gradient(315deg, #9ff669 0%, #31de79 100%);
-      background: linear-gradient(135deg, #9ff669 0%, #31de79 100%);
+      background: -webkit-linear-gradient(-45deg, #2251b2 0%, #31de79 100%);
+      background: -o-linear-gradient(-45deg, #2251b2 0%, #31de79 100%);
+      background: -ms-linear-gradient(-45deg, #2251b2 0%, #31de79 100%);
+      background: -webkit-linear-gradient(315deg, #2251b2 0%, #31de79 100%);
+      background: -o-linear-gradient(315deg, #2251b2 0%, #31de79 100%);
+      background: linear-gradient(135deg, #2251b2 0%, #31de79 100%);
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9ff669', endColorstr='#31de79', GradientType=1 );
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
@@ -8883,7 +8886,7 @@ h1, h2, h3, h4, h5,
     content: '';
     opacity: 0;
     background: #0075f6;
-
+    border-radius: 25px;
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
@@ -8891,7 +8894,8 @@ h1, h2, h3, h4, h5,
     transition: all 0.3s ease; }
     @media (max-width: 767.98px) {
       .project .overlay {
-        opacity: .2; } }
+        opacity: .7;
+    background: #252934; } }
   .project .text {
     max-width: 80%;
     z-index: 1;
@@ -8996,7 +9000,7 @@ textarea.form-control {
   .ftco-footer .ftco-footer-widget h2 {
     font-weight: normal;
     color: #fff;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
     font-size: 22px;
     font-weight: 600; }
   .ftco-footer .ftco-footer-widget ul li {
@@ -9117,7 +9121,8 @@ textarea.form-control {
 .user-img {
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center; }
+  background-position: center center; 
+  border-radius: 25px;}
 
 .image-popup {
   cursor: -webkit-zoom-in;
@@ -9589,11 +9594,17 @@ textarea.form-control {
 
 .word {
     position: absolute;
-    width: 295px;
+    width: 395px;
     opacity: 0;
-    font-size: 35px;
+    font-size: 55px;
+    margin-right: -2000px;
 }
 
+#whatido{
+  font-size: 28px;
+  padding-left: 15px;
+  padding-top: 25px;
+}
 
 .skillsMove {
     height: 40px;
@@ -9609,8 +9620,6 @@ textarea.form-control {
 
 
 .letter {
-
-
     float: left;
     transform: translateZ(65px);
     transform-origin: 50% 50% 25px;
@@ -9630,34 +9639,9 @@ textarea.form-control {
         transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     }
 
-.frontend {
-    color: #F82A2A;
-}
 
-.backend {
-    color: #2980b9;
-}
 
-.apis {
-    color: #0230DA;
-    text-align: center;
-    justify-content: center;
-    margin-left: 45px;
-}
 
-.oop {
-    color: #031933;
-    text-align: center;
-    justify-content: center;
-    margin-left: 46px;
-}
-
-.agile {
-    color: #2c3e50;
-    text-align: center;
-    justify-content: center;
-    margin-left: 41px;
-}
 
 #handlebars{
     width: 300px;
@@ -9847,3 +9831,242 @@ textarea.form-control {
     opacity:1;
     font-size: 19px;
 }
+
+
+
+#button1 {
+  padding-top: 20px;
+  background-color: #0075f6;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  width: 100%;
+  display: block;
+  font-size: 16px;
+  margin: auto;
+  cursor: pointer;
+}
+
+#button1:hover{
+  color:white;
+  border: 2px solid black;
+}
+
+
+
+
+
+#firstpic{
+  object-fit: cover;
+}
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .frontend{
+    display: block;
+    margin-left: 30%;
+    margin-right: auto;
+    color:#F82A2A;
+  }
+  
+  .backend{
+    display: block;
+    margin-left: 30%;
+    margin-right: auto;
+    color:#2980b9;
+  }
+  
+  
+  .apis{
+    display: block;
+    margin-left: 50%;
+    margin-right: auto;
+    color:#0230DA;
+  }
+  
+  .oop{
+    display: block;
+    margin-left: 50%;
+    margin-right: auto;
+    color:#031933;
+  }
+   
+  .testing{
+    display: block;
+    margin-left: 40%;
+    margin-right: auto;
+    color:green;
+  }
+  
+  .agile{
+    display: block;
+    margin-left: 50%;
+    margin-right: auto;
+    color:#ef34ad;
+  }
+
+
+  .owlsub{
+  margin-top: 270px;
+  } 
+
+  .secondimgwords{
+  border-bottom-left-radius: 55px;
+  border-bottom-right-radius: 55px;
+  margin-top: 485px;
+  background: #0a0d184a;
+  height: 295px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  } 
+
+
+
+
+
+  .owl-carousel.home-slider .slider-item .slider-text .one-third {
+   
+    height: 98%;
+   }
+
+
+
+
+
+}
+
+
+
+
+/* Medium devices (landscape tablets, 605px and up) */
+@media only screen and (min-width: 605px) {
+  .frontend{
+    display: block;
+    margin-left: 30%;
+    margin-right: auto;
+    color:#F82A2A;
+  }
+  
+  .backend{
+    display: block;
+    margin-left: 30%;
+    margin-right: auto;
+    color:#2980b9;
+  }
+  
+  
+  .apis{
+    display: block;
+    margin-left: 50%;
+    margin-right: auto;
+    color:#0230DA;
+  }
+  
+  .oop{
+    display: block;
+    margin-left: 50%;
+    margin-right: auto;
+    color:#031933;
+  }
+   
+  .testing{
+    display: block;
+    margin-left: 40%;
+    margin-right: auto;
+    color:green;
+  }
+  
+  .agile{
+    display: block;
+    margin-left: 50%;
+    margin-right: auto;
+    color:#ef34ad;
+  }
+
+
+
+  .owl-carousel.home-slider .slider-item .slider-text .text {
+    position: relative;
+    z-index: 1;
+  margin-top:290px; }
+
+}
+
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  
+.frontend{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color:#F82A2A;
+}
+
+.backend{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color:#2980b9;
+}
+
+
+.apis{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color:#0230DA;
+}
+
+.oop{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color:#031933;
+}
+ 
+.testing{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color:green;
+}
+
+.agile{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color:#ef34ad;
+}
+        
+
+}
+
+
+
+/* Fixes right side white space  issue on mobile  */
+body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+html
+{
+    width: 100%;
+    
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+
+
+
