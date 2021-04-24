@@ -1,22 +1,21 @@
-﻿    <!-- Home Section-->
-
+﻿<!-- Home Section-->
 <section id="home-section" class="hero">
-    <div class="home-slider  owl-carousel">
+    <div class="home-slider owl-carousel">
         <div class="slider-item ">
             <div class="overlay"></div>
             <div class="container">
 
                 <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" >
-                    <img id="firstpic" class="one-third order-md-1 img animated bounceInDown" src="images/linkedpic.jpg" alt="Denzel Awuah, Software Developer">
+                    <img id="firstpic" class="one-third order-md-1 img" src="images/linkedpic.jpg" alt="Denzel Awuah, Software Developer">
                         <div class="overlay"></div>
                     </img>
-                    <div class="one-forth d-flex  align-items-center animated bounceInDown" >
+                    <div class="one-forth d-flex  align-items-center" >
 
-                        <div id="firstimgwords" class="text owlsub">
+                        <div id="firstimgwords" class="text owlsub animated bounceInLeft">
                             <span id="owlsubheading" class="subheading">Hello</span>
                             <h1 class="mb-4 mt-3">I'm <span>{{developerName}}</span></h1>
                             <h2 id="softwareengineer" class="mb-4">A Software Engineer </h2>
-                            <p><a href="#about-section" class="btn-custom">More about me!</a></p>
+                           
                         </div>
                     </div>
                 </div>
@@ -24,7 +23,10 @@
         </div>
 
 
-        <div class="slider-item">
+
+
+
+        {{!-- <div class="slider-item">
             <div class="overlay"></div>
             <div class="container">
                 <div class="row d-flex no-gutters slider-text align-items-end justify-content-end" >
@@ -60,38 +62,165 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
     </div>
 </section> 
+
+
+
+
+<!-- NEW About Section (Carousel)-->
+<!-- <section id="about-section" class="hero ftco-section bg-light">
+    <div class="home-slider1 owl-carousel" id="aboutslider">
+
+
+        <div class="item">
+            <div class="overlay"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-5" id="aboutPicColumn">
+                            <div class="img-about img align-items-stretch" id="aboutpic">
+                                <div class="overlay" style="border-radius: 5px;"></div>
+                                <img src="images/batadenzel.jpg" class="img d-flex align-items-center"
+                                style="width:100%;  border-radius:20px; height: inherit;"  data-aos="fade-right" data-aos-duration="500" data-aos-delay="150" alt="Software Developer, Denzel Awuah at Trent University">
+                                </img>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-7 pl-lg-5 py-5">
+                            <div class="row justify-content-start pb-3" id="aboutrow">
+                                <div class="col-md-12 heading-section">
+                                    <span class="subheading">Welcome</span>
+                                    <h2 class="mb-4" style="font-size: 34px; text-transform: capitalize;">About Me</h2>
+                                    <p  data-aos="fade-right" data-aos-duration="1500" data-aos-delay="150">
+                                        My name is Denzel Awuah and I am a Software Engineer that specializes in the design, development,
+                                        application, implementation and testing of web applications. I graduated from Trent University in June 2020
+                                        with a Honours degree in Computer Science with a Specialization in Software Engineering.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row" id="aboutrow2" data-aos="fade-up" data-aos-duration="500" data-aos-delay="150">
+                                <div class="col-md-6">
+                                    <div class="media block-6 services d-block ftco-animate">
+                                        <div class="icon"><span class="flaticon-web-design"></span></div>
+                                        <div class="media-body">
+                                            <h3 class="heading mb-3">Web Design</h3>
+                                            <p>
+                                                I've been designing web apps for over 4 years now. This web application was made using Node js,
+                                                Express and express-handlebars.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="media block-6 services d-block ftco-animate">
+                                        <div class="icon"><span class="flaticon-ux-design"></span></div>
+                                        <div class="media-body">
+                                            <h3 class="heading mb-3">Web Application</h3>
+                                            <p id="handlebars">
+                                                Handlebars.js is a templating engine used to develop and compile
+                                                templates into javascript functions. This allows for much faster execution of the templates being used for a web
+                                                applicaition.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="counter-wrap d-flex mt-md-3" data-aos="fade-up" data-aos-duration="500" data-aos-delay="150">
+                                <div class="text p-4 pr-5 bg-primary" style="border-radius: 5px;">
+                                    <p class="mb-0">
+                                        <span>+</span> <span class="number" data-number="15">0</span><br/>
+                                        <span>Finished Projects</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+
+
+        <div class="item">
+            <div class="overlay"></div>
+                <div class="container">
+                    <div class="row justify-content-center pb-5">
+                        <div class="col-md-12 heading-section text-center ftco-animate">
+                            <span class="subheading">Intitutions</span>
+                            <h2 class="mb-4">Education Histroy</h2>
+                        </div>
+                    </div>
+                    <div class="row d-flex">
+                        <div class="col-md-8 col-lg-7 pl-lg-5 py-5">
+                            <div class="row" data-aos="fade-up" data-aos-duration="500" data-aos-delay="150">
+                                <div class="col-md-7" id="trentColumn">
+                                    <div class="media block-6 services d-block ftco-animate">
+                                        {{!-- <div class="icon"><span class="flaticon-web-design"></span></div> --}}
+                                        <img class="educationpics" src="images/school.svg" alt="Photo of University Degree" height="90px" width="90px" style="padding-down:90px;">
+                                        <div class="media-body">
+                                            <h3 class="heading mb-3">Trent University</h3>
+                                            <p>Computer Science </p>
+                                            <p>Honors Bacholers of Science (B.Sc)</p>
+                                            <p>Specialization in Software Engineering</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-5" id="dyColumn">
+                                    <div class="media block-6 services d-block ftco-animate">
+                                        <img class="educationpics" src="images/book.svg" alt="Photo of University Degree" height="90px" width="90px" style="padding-down:90px;">
+                                        <div class="media-body">
+                                            <h3 class="heading mb-3">St. Marguerite d'Youville</h3>
+                                            <p id="handlebars">Secondary School Diploma</p>
+                                            <p id="focusCompSci">Focus on Computer Science</p>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-5" id="educationPicColumn">
+                            <div class="img-about img align-items-stretch"
+                            style="height: 517px;" data-aos="fade-left" data-aos-duration="500" data-aos-delay="150">
+                                {{!-- <div class="overlay" style="border-radius: 5px;"></div> --}}
+                                <img class="bluedegreepic" src="images/award.png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+    </div>
+</section>  -->
+
+
+
 
 
 
 <!-- About Sectoion-->
 <section class="ftco-about ftco-counter img ftco-section" id="about-section">
     <div class="container">
-        <div class="row d-flex">
-            <div class="col-md-6 col-lg-5 d-flex">
-                <div class="img-about img d-flex align-items-stretch"
-                style="height: 517px;">
+        <div class="row">
+            <div class="col-md-6 col-lg-5" id="aboutPicColumn">
+                <div class="img-about img align-items-stretch" id="aboutpic">
                     <div class="overlay" style="border-radius: 5px;"></div>
                     <img src="images/batadenzel.jpg" class="img d-flex align-items-center"
-                     style="width:100%;  border-radius:25px; "  data-aos="fade-right" data-aos-duration="1000" data-aos-delay="150" alt="Software Developer, Denzel Awuah at Trent University">
+                     style="width:100%;  border-radius:20px; height: inherit;"  data-aos="fade-right" data-aos-duration="500" data-aos-delay="150" alt="Software Developer, Denzel Awuah at Trent University">
                     </img>
                 </div>
             </div>
             <div class="col-md-6 col-lg-7 pl-lg-5 py-5">
-                <div class="row justify-content-start pb-3">
+                <div class="row justify-content-start pb-3" id="aboutrow">
                     <div class="col-md-12 heading-section">
                         <span class="subheading">Welcome</span>
                         <h2 class="mb-4" style="font-size: 34px; text-transform: capitalize;">About Me</h2>
-                        <p  data-aos="fade-right" data-aos-duration="1500" data-aos-delay="150">
+                        <p  data-aos="fade-right" data-aos-duration="700" data-aos-delay="150">
                             My name is Denzel Awuah and I am a Software Engineer that specializes in the design, development,
                             application, implementation and testing of web applications. I graduated from Trent University in June 2020
                             with a Honours degree in Computer Science with a Specialization in Software Engineering.
                         </p>
                     </div>
                 </div>
-                <div class="row" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150">
+                <div class="row" id="aboutrow2" data-aos="fade-up" data-aos-duration="500" data-aos-delay="150">
                     <div class="col-md-6">
                         <div class="media block-6 services d-block ftco-animate">
                             <div class="icon"><span class="flaticon-web-design"></span></div>
@@ -99,7 +228,7 @@
                                 <h3 class="heading mb-3">Web Design</h3>
                                 <p>
                                     I've been designing web apps for over 4 years now. This web application was made using Node js,
-                                    Express and express-handlebars.
+                                    Express and Handlebars JS.
                                 </p>
                             </div>
                         </div>
@@ -108,7 +237,7 @@
                         <div class="media block-6 services d-block ftco-animate">
                             <div class="icon"><span class="flaticon-ux-design"></span></div>
                             <div class="media-body">
-                                <h3 class="heading mb-3">Web Application</h3>
+                                <h3 class="heading mb-3">Web Applications</h3>
                                 <p id="handlebars">
                                     Handlebars.js is a templating engine used to develop and compile
                                     templates into javascript functions. This allows for much faster execution of the templates being used for a web
@@ -118,7 +247,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="counter-wrap ftco-animate d-flex mt-md-3">
+                <div class="counter-wrap d-flex mt-md-3" data-aos="fade-up" data-aos-duration="500" data-aos-delay="150">
                     <div class="text p-4 pr-5 bg-primary" style="border-radius: 5px;">
                         <p class="mb-0">
                             <span>+</span> <span class="number" data-number="15">0</span><br/>
@@ -132,9 +261,57 @@
 </section>
 
 
+<!-- Education Section-->
+<section class="ftco-section" id="education-section">
+    <div class="container">
+        <div class="row justify-content-center pb-5">
+            <div class="col-md-12 heading-section text-center ftco-animate">
+                <span class="subheading">Intitutions</span>
+                <h2 class="mb-4">Education Histroy</h2>
+            </div>
+        </div>
+        <div class="row d-flex">
+            <div class="col-md-8 col-lg-7 pl-lg-5 py-5">
+                <div class="row" data-aos="fade-up" data-aos-duration="500" data-aos-delay="150">
+                    <div class="col-md-7" id="trentColumn">
+                        <div class="media block-6 services d-block ftco-animate">
+                            {{!-- <div class="icon"><span class="flaticon-web-design"></span></div> --}}
+                            <img class="educationpics" src="images/school.svg" alt="Photo of University Degree" height="90px" width="90px" style="padding-down:90px;">
+                            <div class="media-body">
+                                <h3 class="heading mb-3">Trent University</h3>
+                                <p>Computer Science </p>
+                                <p>Honors Bacholers of Science (B.Sc)</p>
+                                <p>Specialization in Software Engineering</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5" id="dyColumn">
+                        <div class="media block-6 services d-block ftco-animate">
+                            <img class="educationpics" src="images/book.svg" alt="Photo of University Degree" height="90px" width="90px" style="padding-down:90px;">
+                            <div class="media-body">
+                                <h3 class="heading mb-3">St. Marguerite d'Youville</h3>
+                                <p id="handlebars">Secondary School Diploma</p>
+                                 <p id="focusCompSci">Focus on Computer Science</p>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-5" id="educationPicColumn">
+                <div class="img-about img align-items-stretch"
+                style="height: 517px;" data-aos="fade-left" data-aos-duration="500" data-aos-delay="150">
+                    {{!-- <div class="overlay" style="border-radius: 5px;"></div> --}}
+                    <img class="bluedegreepic" src="images/award.png" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 <!-- Skills Section-->
-<section class="ftco-section bg-light " id="skills-section">
+<section class="ftco-section bg-light" id="skills-section">
     <div class="container">
         <div class="row justify-content-center pb-5">
             <div class="col-md-12 heading-section text-center ftco-animate">
@@ -143,7 +320,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6 animate-box" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="150">
+            <div class="col-md-6 animate-box" data-aos="fade-right" data-aos-duration="800" data-aos-delay="150">
                 <div class="progress-wrap ftco-animate">
                     <h3>React.js</h3>
                     <div class="progress">
@@ -154,7 +331,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 animate-box" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="150">
+            <div class="col-md-6 animate-box" data-aos="fade-left" data-aos-duration="800" data-aos-delay="150">
                 <div class="progress-wrap ftco-animate">
                     <h3>Angular.js</h3>
                     <div class="progress">
@@ -165,7 +342,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 animate-box" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="150">
+            <div class="col-md-6 animate-box" data-aos="fade-right" data-aos-duration="800" data-aos-delay="150">
                 <div class="progress-wrap ftco-animate">
                     <h3>C#</h3>
                     <div class="progress">
@@ -176,7 +353,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 animate-box" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="150">
+            <div class="col-md-6 animate-box" data-aos="fade-left" data-aos-duration="800" data-aos-delay="150">
                 <div class="progress-wrap ftco-animate">
                     <h3>Javascript</h3>
                     <div class="progress">
@@ -187,7 +364,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 animate-box" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="150">
+            <div class="col-md-6 animate-box" data-aos="fade-right" data-aos-duration="800" data-aos-delay="150">
                 <div class="progress-wrap ftco-animate">
                     <h3>.NET Core</h3>
                     <div class="progress">
@@ -198,19 +375,19 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 animate-box" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="150">
+            <div class="col-md-6 animate-box" data-aos="fade-left" data-aos-duration="800" data-aos-delay="150">
                 <div class="progress-wrap ftco-animate">
                     <h3>Java</h3>
                     <div class="progress">
                         <div class="progress-bar color-2" role="progressbar" aria-valuenow="60"
-                             aria-valuemin="0" aria-valuemax="100" style="width:85%">
-                            <span class="shimmer">5 Years</span>
+                             aria-valuemin="0" aria-valuemax="100" style="width:75%">
+                            <span class="shimmer">3 Years</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row justify-content-center py-5 mt-5"  data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="150">
+        <div class="row justify-content-center py-5 mt-5"  data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="150">
             <div  class="col-md-6 heading-section text-center ftco-animate">
                 <span id="whatido" class="subheading">What I Do - </span>
                 <!--  <h2 class="mb-4">Software Development</h2> -->
@@ -225,8 +402,10 @@
                 </div>
         </div>
 
- <br>
- <br>
+
+<div class="spacer" style="padding-bottom: 50px;"></div>
+
+
 
         <div class="row">
             <div class="col-md-4 text-center d-flex ftco-animate">
@@ -274,7 +453,7 @@
 
 
 <!-- Hire me Section-->
-<section class="ftco-section ftco-hireme" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+<section class="ftco-section ftco-hireme" data-aos="fade-left" data-aos-duration="500" data-aos-delay="200">
     <div class="container">
         <div class="row">
             <div class="col-md-7 col-lg-9 d-flex align-items-center ftco-animate">
@@ -286,8 +465,6 @@
         </div>
     </div>
 </section>
-
-
 
 
 <!-- Projects Section-->
@@ -302,7 +479,7 @@
         </div>
         <div class="row">
             <!-- CRM Website -->
-            <div class="col-md-12" data-aos="zoom-in-down" data-aos-duration="2000" data-aos-delay="200">
+            <div class="col-md-12" data-aos="zoom-in-down" data-aos-duration="800" data-aos-delay="200">
                 <div class="project img ftco-animate img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/crmm.jpg);  ">
                     <div class="overlay"></div>
                     <div class="text text-center p-4">
@@ -314,7 +491,7 @@
                 </div>
             </div>
             <!-- React Word Processor -->
-            <div class="col-md-6" data-aos="fade-up-right" data-aos-duration="1000" data-aos-delay="200" >
+            <div class="col-md-6" data-aos="fade-up-right" data-aos-duration="500" data-aos-delay="200" >
                  <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/wordApp1.jpg);">
                     <div class="overlay"></div>
                     <div class="text text-center p-4">
@@ -325,7 +502,7 @@
                 </div>
             </div>
             <!-- Angular Site  -->
-            <div class="col-md-6" data-aos="fade-up-left" data-aos-duration="1000" data-aos-delay="200">
+            <div class="col-md-6" data-aos="fade-up-left" data-aos-duration="500" data-aos-delay="200">
                 <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/home.jpg);">
                     <div class="overlay"></div>
                     <div class="text text-center p-4">
@@ -336,7 +513,7 @@
                 </div>
             </div>
             <!-- Chatting Program -->
-            <div class="col-md-4" data-aos="fade-up-right" data-aos-duration="1000" data-aos-delay="200">
+            <div class="col-md-4" data-aos="fade-up-right" data-aos-duration="500" data-aos-delay="200">
                 <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/chat3.jpg);">
                     <div class="overlay"></div>
                     <div class="text text-center p-4">
@@ -347,7 +524,7 @@
                 </div>
             </div>
             <!-- Client Server Processing Program -->
-            <div class="col-md-8" data-aos="fade-up-left" data-aos-duration="1000" data-aos-delay="200">
+            <div class="col-md-8" data-aos="fade-up-left" data-aos-duration="500" data-aos-delay="200">
                 <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/database.jpg);">
                     <div class="overlay"></div>
                     <div class="text text-center p-4">
@@ -363,9 +540,8 @@
 
 
 
-
 <!-- Work Experience Section-->
-<section class="ftco-section bg-light" id="work-section">
+<section class="ftco-section" id="work-section">
     <div class="container">
         <div class="row justify-content-center mb-5 pb-5">
             <div class="col-md-7 heading-section text-center ftco-animate">
@@ -375,7 +551,7 @@
             </div>
         </div>
                  <div class="row d-flex">
-            <div class="col-md-6 d-flex" data-aos="zoom-in-right"  data-aos-duration="1000" data-aos-delay="200">
+            <div class="col-md-6 d-flex" data-aos="zoom-in-right"  data-aos-duration="500" data-aos-delay="200">
                 <div class="blog-entry justify-content-end">
                     <img src="images/dms.jpg"  class="block-20" style="border-radius: 25px;  object-fit: cover;" alt="Digital Main Street">
                     </img>
@@ -400,7 +576,7 @@
                     </div>
                 </div>
             </div>
-             <div class="col-md-6 d-flex" data-aos="zoom-in-left"  data-aos-duration="1000" data-aos-delay="200">
+             <div class="col-md-6 d-flex" data-aos="zoom-in-left"  data-aos-duration="500" data-aos-delay="200">
                 <div class="blog-entry justify-content-end">
                     <a  class="block-20" style="background-image: url('images/ebgames.jpg');">
                     </a>
@@ -429,7 +605,7 @@
             </div>
           </div>
         <div class="row d-flex">
-            <div class="col-md-6 d-flex" data-aos="zoom-in-right"  data-aos-duration="1000" data-aos-delay="200">
+            <div class="col-md-6 d-flex" data-aos="zoom-in-right"  data-aos-duration="500" data-aos-delay="200">
                 <div class="blog-entry justify-content-end">
                     <img  src="images/trent.jpg" class="block-20" style="object-fit: contain; background-color:white;" alt="Trent University">
                     </img>
@@ -457,7 +633,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 d-flex" data-aos="zoom-in-left" data-aos-duration="1000" data-aos-delay="200">
+            <div class="col-md-6 d-flex" data-aos="zoom-in-left" data-aos-duration="500" data-aos-delay="200">
                 <div class="blog-entry justify-content-end">
                     <img src="images/hack5.jpg"  class="block-20" style="object-fit: contain; background-color:white;" alt="Trent University Electric City Hackathon">
                     </img>
@@ -489,9 +665,8 @@
 
 
 
-
 <!-- Contact Section-->
-<section class="ftco-section contact-section ftco-no-pb" id="contact-section" data-aos="zoom-in-down" data-aos-duration="2000" data-aos-delay="200">
+<section class="ftco-section contact-section ftco-no-pb" id="contact-section" data-aos="zoom-in-down" data-aos-duration="600" data-aos-delay="200">
     <div class="container">
         <div class="row justify-content-center pb-3">
             <div class="col-md-7 heading-section text-center ftco-animate">

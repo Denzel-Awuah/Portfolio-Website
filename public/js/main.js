@@ -85,15 +85,15 @@
 
 	var carousel = function() {
 		$('.home-slider').owlCarousel({
-	    loop:true,
-	    autoplay: true,
+	    loop:false,
+	    autoplay: false,
 	    margin:0,
 	    animateOut: 'fadeOut',
 	    animateIn: 'fadeIn',
 	    nav:false,
 	    autoplayHoverPause: false,
 	    items: 1,
-	    navText : ["<span class='ion-md-arrow-back'></span>","<span class='ion-chevron-right'></span>"],
+	    // navText : ["<span class='ion-md-arrow-'></span>","<span class='ion-md-arrow-'></span>"],
 	    responsive:{
 	      0:{
 	        items:1
@@ -108,6 +108,36 @@
 		});
 	};
 	carousel();
+
+
+	var carousel1 = function() {
+		$('.home-slider1').owlCarousel({
+	    loop:true,
+	    autoplay: false,
+	    margin:0,
+	    animateOut: 'fadeOut',
+	    animateIn: 'fadeIn',
+	    nav:false,
+	    autoplayHoverPause: false,
+	    items: 1,
+	    // navText : ["<span class='ion-md-arrow-back'></span>","<span class='ion-md-arrow-forward'></span>"],
+	    responsive:{
+	      0:{
+	        items:1
+	      },
+	      600:{
+	        items:1
+	      },
+	      1000:{
+	        items:1
+	      }
+	    }
+		});
+	};
+	carousel1();
+	
+
+	
 
 	$('nav .dropdown').hover(function(){
 		var $this = $(this);
